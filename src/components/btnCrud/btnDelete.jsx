@@ -54,7 +54,7 @@ const BtnDeletar = ({ itemId }) => {
         toast.error("Não foi possível deletar o item.");
       }
     } catch (error) {
-      console.log(error.response.data);
+      console.error("Erro ao deletar o item:", error);
       toast.error("Erro ao deletar o item. Tente novamente mais tarde.");
     }
   };
